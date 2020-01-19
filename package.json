@@ -17,11 +17,13 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
+        "svelte-loader": "^2.13.6",
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
         "bootstrap": "^4.4.1",
         "jquery": "^3.4.1",
+        "laravel-mix-purgecss": "^4.2.0",
         "laravel-mix-svelte": "github:wewowweb/laravel-mix-svelte",
         "popper.js": "^1.16.0",
         "svelte": "^3.17.1"

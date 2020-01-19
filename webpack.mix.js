@@ -1,6 +1,7 @@
 const mix = require('laravel-mix');
 
 require('laravel-mix-svelte');
+require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -15,4 +16,8 @@ require('laravel-mix-svelte');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .svelte();
+    .svelte()
+    .purgeCss({
+        enabled: true,
+        extensions: ['html', 'js', 'php', 'svelte']
+    });

@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7432534b-fce7-4f7f-b3f7-5e045ba9d136" name="Default Changelist" comment="" />
+    <list default="true" id="7432534b-fce7-4f7f-b3f7-5e045ba9d136" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b0128d69557e6cf9bf01fe78023e169e8ca9cc5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/452b8fb5dde307f6d881c8321c4d3bae10101a22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80ff0fbbf7ff3e759034d9dedad1349718959f45" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa3884a3b9fc7a29dc7158aa9d39682f9e3fa0b3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae997091d03ecb28a8984a3fb32d562f361252cf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b337d07ab0e7d54bf5547a0321a43ecafbd73ec1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be6e93ebf61cae1202e7840621813b8225461a46" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4dae00d11854b35292c2b8a30515a9a0aa2d871" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-dev-script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d9488fe-030e-4f82-a05d-4ff2fa084e60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d9488fe-030e-4f82-a05d-4ff2fa084e60.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker-setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +65,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="jKSEhMGY" />
@@ -147,9 +173,16 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="discord-application" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -176,6 +209,7 @@
       <workItem from="1579204084489" duration="771000" />
       <workItem from="1579383953756" duration="646000" />
       <workItem from="1579384686902" duration="1912000" />
+      <workItem from="1579456134218" duration="1300000" />
     </task>
     <servers />
   </component>
@@ -211,9 +245,9 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="461" y="159" key="SettingsEditor/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579384749349" />
-    <state x="639" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1579384707504">
+    <state x="639" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1579456168278">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="639" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579384707504" />
+    <state x="639" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579456168278" />
   </component>
 </project>
