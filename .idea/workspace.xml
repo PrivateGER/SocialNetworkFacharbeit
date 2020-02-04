@@ -2,28 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7432534b-fce7-4f7f-b3f7-5e045ba9d136" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b0128d69557e6cf9bf01fe78023e169e8ca9cc5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/452b8fb5dde307f6d881c8321c4d3bae10101a22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80ff0fbbf7ff3e759034d9dedad1349718959f45" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa3884a3b9fc7a29dc7158aa9d39682f9e3fa0b3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae997091d03ecb28a8984a3fb32d562f361252cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b337d07ab0e7d54bf5547a0321a43ecafbd73ec1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be6e93ebf61cae1202e7840621813b8225461a46" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4dae00d11854b35292c2b8a30515a9a0aa2d871" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-dev-script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint-state.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/0641c680b942e021758f1e1713924e74c8e04e24" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c96dd63e07fb2e889aeaea5cbabd89d0d09f1fb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d609d01c9a49c00edc812758f631146e5781759" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bfb05dc7f9d1708ffc561e370a53ad2df3db646" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/25f3138269ef3e563ed48f546a9a87004245a1c5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/285c8c4e45bcdd2b209e01e572f0e74a005df5df" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31d283052936b2e7a79a7aa05dd75800e2abe438" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/3957b91a0d8450cea0115cfd5af69eac90d75897" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e46269479a88633092a5c55d90f57c042af7f70" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48b0a0578a2bc296f62425eaba6481ffdd3aa19a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/50c8b1d5c784d42aa81a9c9ab1bb693aa5b2986e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/5158cc6821d0344345606af2834807beae093242" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5aaab58b80608ba3fa5ffe543eb39c3fadeea2da" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/6600d9fbbe7a21bcc71cac7b7b37fc5cbe2ece45" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/67161c676f4a23564cf14dc53e6bbab5ad621f89" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/696b15fe36d84dad397f5ce5f7e3dcc57e97154b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b9a783d9b43fee50fd28f56dbd1856d2608f305" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7a8e6013289ac0f237b77e1023d5c694128b53ff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7ccbb151ef37887cef94b5bd35680442f1c325bf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/857628e89e6d3e0f341720284d70b5f44c757924" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d29ec9b2236b34fe24c26104c493b5b266a1728" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6067b75f941ec7f9127c7cc2e1abd20c8744a74" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb15157c0d7a8f335c60cd72fbefe4b4e88e2501" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de963aaada5c6577b654cfbdcf083dc355b1fa2b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efa6103e9efc9c014e9e9a2750e8db43f145bb53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb270708655529ffd775aea7e5732bb57e3bcefc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff5cc1b4f69937903c1349359e041b096f4f3f53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/ValidAuthToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Authentication/Authenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PostSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-stop.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/defaultavatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gsm-logo_farbe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SocialNet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SocialNet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d9488fe-030e-4f82-a05d-4ff2fa084e60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d9488fe-030e-4f82-a05d-4ff2fa084e60.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/452b8fb5dde307f6d881c8321c4d3bae10101a22" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AuthTokens.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AuthTokens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_18_221539_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_18_221539_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker-setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laradock-env" beforeDir="false" afterPath="$PROJECT_DIR$/laradock-env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Home.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Home.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Landing.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Landing.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,18 +100,39 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="socialnetwork@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - socnet@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="socialnetwork@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - socnet@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="socialnetwork@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - socnet@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="socialnetwork: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="socnet: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - socnet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="socnet: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="auth_tokens: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - socnet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="socnet: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="posts: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - socnet@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="socnet: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -164,23 +235,31 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1WUVIuMTQ0UzhxAlcAIbeSy9YUS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env&#10;/home/privateger/PhpstormProjects/SocialNetworkFacharbeit/laradock/.env" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Repositories/Authentication" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -209,22 +288,45 @@
       <workItem from="1579204084489" duration="771000" />
       <workItem from="1579383953756" duration="646000" />
       <workItem from="1579384686902" duration="1912000" />
-      <workItem from="1579456134218" duration="1300000" />
+      <workItem from="1579456134218" duration="5376000" />
+      <workItem from="1579617030940" duration="4055000" />
+      <workItem from="1579801180868" duration="611000" />
+      <workItem from="1580061243702" duration="1161000" />
+      <workItem from="1580062949832" duration="5170000" />
+      <workItem from="1580069558805" duration="997000" />
+      <workItem from="1580143198563" duration="861000" />
+      <workItem from="1580399273432" duration="4082000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579386188812">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="579" y="215" width="800" height="675" key="#SonarLint" timestamp="1580069608575">
+      <screen x="48" y="28" width="1872" height="1052" />
+    </state>
+    <state x="579" y="215" width="800" height="675" key="#SonarLint/48.28.1872.1052/1920.0.1920.1080@48.28.1872.1052" timestamp="1580069608575" />
+    <state x="594" y="215" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580064425506">
+      <screen x="48" y="28" width="1872" height="1052" />
     </state>
     <state x="560" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579386188812" />
+    <state x="594" y="215" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/48.28.1872.1052/1920.0.1920.1080@48.28.1872.1052" timestamp="1580064425506" />
     <state x="691" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579388108231">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="691" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579388108231" />
+    <state x="644" y="374" width="650" height="368" key="AddEditExclusionDialog" timestamp="1580069606481">
+      <screen x="48" y="28" width="1872" height="1052" />
+    </state>
+    <state x="644" y="374" width="650" height="368" key="AddEditExclusionDialog/48.28.1872.1052/1920.0.1920.1080@48.28.1872.1052" timestamp="1580069606481" />
+    <state x="722" y="294" width="493" height="514" key="FileChooserDialogImpl" timestamp="1580069605562">
+      <screen x="48" y="28" width="1872" height="1052" />
+    </state>
+    <state x="722" y="294" width="493" height="514" key="FileChooserDialogImpl/48.28.1872.1052/1920.0.1920.1080@48.28.1872.1052" timestamp="1580069605562" />
     <state width="1874" height="288" key="GridCell.Tab.0.bottom" timestamp="1579204856378">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -241,13 +343,24 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="288" key="GridCell.Tab.0.right/0.0.1920.1044/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579204856378" />
-    <state x="461" y="159" key="SettingsEditor" timestamp="1579384749349">
-      <screen x="0" y="0" width="1920" height="1044" />
+    <state x="497" y="188" key="SettingsEditor" timestamp="1580069546895">
+      <screen x="48" y="28" width="1872" height="1052" />
     </state>
     <state x="461" y="159" key="SettingsEditor/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579384749349" />
-    <state x="639" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1579456168278">
+    <state x="497" y="188" key="SettingsEditor/48.28.1872.1052/1920.0.1920.1080@48.28.1872.1052" timestamp="1580069546895" />
+    <state x="934" y="456" key="com.intellij.ide.util.TipDialog" timestamp="1580399273440">
+      <screen x="48" y="28" width="1872" height="1052" />
+    </state>
+    <state x="639" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579617066510" />
+    <state x="2559" y="361" key="com.intellij.ide.util.TipDialog/48.28.1872.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579801181261" />
+    <state x="934" y="456" key="com.intellij.ide.util.TipDialog/48.28.1872.1052/1920.0.1920.1080@48.28.1872.1052" timestamp="1580399273440" />
+    <state x="757" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579457995116">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="639" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579456168278" />
+    <state x="757" y="444" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1579457995116" />
+    <state x="648" y="254" key="run.anything.popup" timestamp="1580070449311">
+      <screen x="48" y="28" width="1872" height="1052" />
+    </state>
+    <state x="648" y="254" key="run.anything.popup/48.28.1872.1052/1920.0.1920.1080@48.28.1872.1052" timestamp="1580070449311" />
   </component>
 </project>

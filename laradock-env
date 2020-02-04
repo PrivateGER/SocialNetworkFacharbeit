@@ -269,7 +269,7 @@ APACHE_DOCUMENT_ROOT=/var/www/
 ### MYSQL #################################################
 
 MYSQL_VERSION=latest
-MYSQL_DATABASE=default
+MYSQL_DATABASE=laravel
 MYSQL_USER=laravel
 MYSQL_PASSWORD=root
 MYSQL_PORT=3306

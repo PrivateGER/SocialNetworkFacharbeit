@@ -11,24 +11,13 @@
 		if (!history.state) {
 			window.history.replaceState({path: window.location.pathname}, '', window.location.href)
 		}
-		window.ensureAuth(window.location.pathname);
+    });
 
-		setInterval(checkNavbarAuth, 1000);
-	});
-
-	function checkNavbarAuth() {
-		if(localStorage.getItem("token") !== undefined && localStorage.getItem("token") !== null && localStorage.getItem("token").length === 128) {
-			showNavbar = true;
-		} else {
-			showNavbar = false;
-		}
-    }
-
-    checkNavbarAuth();
 
 	function handlerBackNavigation(event) {
 		curRoute.set(event.state.path)
 	}
+
 
 </script>
 <style>

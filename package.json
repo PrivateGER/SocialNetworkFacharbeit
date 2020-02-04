@@ -25,6 +25,7 @@
         "jquery": "^3.4.1",
         "laravel-mix-purgecss": "^4.2.0",
         "laravel-mix-svelte": "github:wewowweb/laravel-mix-svelte",
+        "normalize.css": "^8.0.1",
         "popper.js": "^1.16.0",
         "svelte": "^3.17.1"
     }

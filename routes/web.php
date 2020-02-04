@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::fallback(function ($any = null) {
+    return view('welcome');
+});
+

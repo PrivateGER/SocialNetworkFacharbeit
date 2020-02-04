@@ -18,3 +18,21 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+Route::prefix('auth')->group(function () {
+    Route::get("info", "AuthController@getTokenInfo");
+    Route::post("login", "AuthController@loginAndRetrieveToken");
+});
+
+Route::middleware(["valid_token"])->group(function() {
+    Route::prefix("post")->group(function () {
+
+        Route::get("view/{id}", "PostController@viewPost");
+        Route::post("create", "PostController@createPost");
+
+    });
+
+    Route::prefix('auth')->group(function () {
+        Route::post("changepassword", "AuthController@changePassword");
+        Route::post("logout", "AuthController@deleteToken");
+    });
+});
