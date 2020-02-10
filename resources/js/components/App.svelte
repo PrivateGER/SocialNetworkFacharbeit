@@ -33,9 +33,7 @@
 <RouterLink page={{path: '/home', name: 'Home'}} />
 <RouterLink page={{path: '/login', name: 'Login'}} />-->
 
-{ #if showNavbar }
-    <Navbar />
-{ /if }
+<Navbar />
 <br />
 <div id="pageContent">
 	<svelte:component this={router[$curRoute]} />

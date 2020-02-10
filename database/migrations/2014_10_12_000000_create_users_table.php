@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->text('permissions')->default('["USER"]');
             $table->text("profile_picture_url")->default("");
+            $table->text("blocked_users")->default("");
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

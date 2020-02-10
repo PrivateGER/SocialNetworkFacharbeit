@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\AuthTokens;
 use App\Post;
+use FeedManager\FeedManager;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -52,5 +53,14 @@ class PostController extends Controller
             "err" => "",
             "id" => $newPost->id,
         ), 200);
+    }
+
+    public function feed(Request $request) {
+        $page = $request->page;
+        $limit = $request->limit;
+
+        $userID = AuthTokens::getTokenData($request->token)[0]->user->id;
+
+        echo json_encode(FeedManager::getUserFeed($page, $limit, $userID));
     }
 }

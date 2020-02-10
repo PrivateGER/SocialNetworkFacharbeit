@@ -1,5 +1,9 @@
 <script>
 	import RouterLink from "./RouterLink.svelte";
+
+	function toggleNavbar() {
+        document.getElementById("collapsibleNavbar").classList.toggle("collapse");
+    }
 </script>
 <style>
     .nav-link {
@@ -11,12 +15,12 @@
 <div class="row">
 	<div class="col-sm-4">
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-			<RouterLink page={{path: '/home', name: 'Home', placeholder: "Marktplatz", "class": "navbar-brand "}} />
+			<RouterLink page={{path: '/home', name: 'Home', placeholder: "SchulNet", "class": "navbar-brand "}} />
 			<!--<a class="navbar-brand" href="/home">
 				<img  style="width: 100px" src="image.png" alt=" logo" >
                 <p class="align-baseline">Marktplatz</p>
 			</a>-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<button class="navbar-toggler" type="button" on:click={toggleNavbar} aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">

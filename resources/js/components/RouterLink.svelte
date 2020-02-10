@@ -13,9 +13,6 @@
 		curRoute.set(event.target.pathname);
 		// push the path into web browser history API
 		window.history.pushState({path: page.path}, '', window.location.origin + page.path);
-
-		window.ensureAuth(event.target.pathname);
-
 	}
 
 	function redirectToPath(path) {
@@ -24,7 +21,6 @@
 		// push the path into web browser history API
 		window.history.pushState({path: page.path}, '', window.location.origin + path);
 
-		window.ensureAuth(path);
     }
 
 </script>
@@ -34,4 +30,4 @@
 
 </style>
 
-<a href={page.path} class={page.class} on:click|preventDefault={redirectTo}>{page.placeholder}</a>
+<a href={page.path} class={page.class} on:click|preventDefault={redirectTo}>{@html page.placeholder}</a>

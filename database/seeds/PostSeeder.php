@@ -14,12 +14,14 @@ class PostSeeder extends Seeder
         $faker = Faker\Factory::create();
         //
 
-        for($i = 0; $i < count(\App\User::all()); $i++) {
-            $post = new \App\Post();
-            $post->content = $faker->realText(300);
-            $post->author_id = $i;
-            $post->type = "text";
-            $post->save();
+        for($i = 1; $i < count(\App\User::all()); $i++) {
+            for($j = 0; $j < 5; $j++) {
+                $post = new \App\Post();
+                $post->content = $faker->realText(300);
+                $post->author_id = $i;
+                $post->type = "text";
+                $post->save();
+            }
         }
     }
 }
