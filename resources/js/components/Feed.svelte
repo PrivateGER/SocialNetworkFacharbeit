@@ -23,7 +23,7 @@
     <SpinningLoader />
 {:then data}
     { #each data as post }
-        <Post id={ post.id } />
+        <Post postID={ post.id } />
         <br />
     { /each }
 {:catch error}
