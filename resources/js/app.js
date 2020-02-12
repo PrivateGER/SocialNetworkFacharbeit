@@ -24,7 +24,6 @@ window.API_ROUTES = {
 };
 
 setInterval(() => {
-    return;
 
     if(window.location.href.includes("login")) {
         return;

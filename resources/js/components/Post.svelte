@@ -24,6 +24,7 @@
 {#await getPostDetails() }
     <SpinningLoader />
 {:then post}
+    { #if post.type === "text" }
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">{ post.author_name }</h5>
@@ -33,4 +34,5 @@
             <RouterLink page={{path: '/comments?id=' + postID, name: 'Comments', placeholder: "<i class=\"fas fa-comments\"></i> Kommentare", "class": "card-link"}} />
         </div>
     </div>
+    { /if }
 {/await}
