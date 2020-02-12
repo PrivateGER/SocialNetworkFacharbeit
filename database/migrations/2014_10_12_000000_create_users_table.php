@@ -19,9 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->text('permissions')->default('["USER"]');
-            $table->text("profile_picture_url")->default("");
-            $table->text("blocked_users")->default("");
+            $table->string('permissions')->default('USER');
+            $table->string("profile_picture_url")->default("");
+            $table->string("blocked_users")->default("");
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

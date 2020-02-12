@@ -16,7 +16,7 @@ class CreateChatRoomsTable extends Migration
         Schema::create('chat_rooms', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text("name");
-            $table->text("banned_users")->default("[]");
+            $table->text("banned_users");
             $table->timestamps();
         });
     }
