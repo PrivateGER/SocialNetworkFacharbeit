@@ -16,8 +16,8 @@ require('laravel-mix-purgecss');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .svelte()
-    .purgeCss({
+    .svelte();
+    /*.purgeCss({
         enabled: true,
         extensions: ['html', 'js', 'php', 'svelte']
-    });
+    });*/
