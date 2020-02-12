@@ -29,9 +29,6 @@
 </style>
 
 <svelte:window on:popstate={handlerBackNavigation} />
-<!--
-<RouterLink page={{path: '/home', name: 'Home'}} />
-<RouterLink page={{path: '/login', name: 'Login'}} />-->
 
 <Navbar />
 <br />

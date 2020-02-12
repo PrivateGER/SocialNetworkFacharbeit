@@ -4,7 +4,6 @@
 require('./bootstrap');
 require("popper.js");
 
-
 import App from "./components/App.svelte";
 
 const app = new App({
@@ -23,23 +22,25 @@ window.API_ROUTES = {
     "createpost": "/api/post/create",
 };
 
-setInterval(() => {
+function checkAuth() {
+	if(window.location.href.includes("login")) {
+		return;
+	}
 
-    if(window.location.href.includes("login")) {
-        return;
-    }
+	if(localStorage.getItem("token") === null || localStorage.getItem("token").length !== 128) {
+		window.location.href = "/login";
+		return;
+	}
 
-    if(localStorage.getItem("token") === null || localStorage.getItem("token").length !== 128) {
-        window.location.href = "/login";
-    }
+	fetch("/api/auth/info?token=" + localStorage.getItem("token"))
+		.then((data) => {
+			if(data.status === 401 && !window.location.href.includes("login")) {
+				window.location.href = "/login";
+			}
+		});
+}
 
-   fetch("/api/auth/info?token=" + localStorage.getItem("token"))
-       .then((data) => {
-           if(data.status === 401) {
-               window.location.href = "/login";
-           }
-       });
-}, 1500);
+setInterval(checkAuth, 2000);
 
 export default app;
 

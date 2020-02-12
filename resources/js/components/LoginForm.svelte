@@ -1,5 +1,7 @@
 <script>
 	import {curRoute, onMount} from 'svelte';
+	import Swal from 'sweetalert2'
+
 
 	let email = "";
 	let password = "";
@@ -37,6 +39,7 @@
             window.location.href = "/home";
         }).catch((err) => {
 			console.log(err);
+			Swal.fire("Fehler", "Fehler bei der Kommunikation mit dem Server.", "error");
 		});
 	}
 

@@ -28,6 +28,7 @@ Route::middleware(["valid_token"])->group(function() {
         Route::get("feed", "PostController@feed");
         Route::get("view/{id}", "PostController@viewPost");
         Route::post("create", "PostController@createPost");
+        Route::post("create_comment", "PostController@createComment");
 
     });
 
