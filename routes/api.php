@@ -29,6 +29,7 @@ Route::middleware(["valid_token"])->group(function() {
         Route::get("view/{id}", "PostController@viewPost");
         Route::post("create", "PostController@createPost");
         Route::post("create_comment", "PostController@createComment");
+        Route::post("report/{id}", "PostController@reportPost");
 
     });
 
@@ -36,4 +37,15 @@ Route::middleware(["valid_token"])->group(function() {
         Route::post("changepassword", "AuthController@changePassword");
         Route::post("logout", "AuthController@deleteToken");
     });
+});
+
+Route::middleware(["valid_moderation_token"])->group(function () {
+	Route::prefix("admin")->group(function () {
+		Route::prefix("reports")->group(function () {
+			Route::get("list", "AdministrationController@listReports");
+			Route::post("process_report", "AdministrationController@process_report");
+		});
+
+		Route::get("modlog", "AdministrationController@showModlog");
+	});
 });

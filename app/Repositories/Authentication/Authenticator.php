@@ -38,7 +38,7 @@ class TokenManager {
                             "username" => $authToken->user->name,
                             "email" => $authToken->user->email,
                             "profile_picture_url" => $authToken->user->profile_picture_url,
-                            "permissions" => json_decode($authToken->user->permissions),
+                            "permission_level" => $authToken->user->permission_level,
                             "created" => $authToken["created_at"]
                         )
                     ]

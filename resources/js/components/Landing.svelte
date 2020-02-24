@@ -3,14 +3,17 @@
 
 </script>
 <style>
-
+.centeredtext {
+	text-align: center;
+}
 </style>
 
-<div class="card mx-auto align-items-center" style="width: 18rem;">
-	<img src="gsm-logo_farbe.jpg" class="card-img-top" alt="St Michael Logo">
+<div class="card mx-auto align-items-center">
 	<div class="card-body">
-		<p class="card-text">Willkommen bei dem St. Michael Marktplatz!</p>
-		<!--<RouterLink page={{path: '/login', name: 'Home', placeholder: "Login", "class": "navbar-brand "}} />-->
-
-    </div>
+		<img src="gsm-logo_farbe.jpg" class="card-img-top" alt="St Michael Logo">
+		<div class="card-body">
+			<h2 class="card-text centeredtext">Willkommen bei SchulNet!</h2>
+			<h3 class="centeredtext">Bitte <RouterLink page={{path: '/login', name: 'Home', placeholder: "melde dich an", "class": ""}} />, um mitzumachen!</h3>
+		</div>
+	</div>
 </div>

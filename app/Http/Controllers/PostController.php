@@ -15,12 +15,14 @@ class PostController extends Controller
         if(count($post) === 1) {
 			$postToSend = $post->toArray()[0];
 			$postToSend["author_name"] = $post[0]->user->name;
+			$postToSend["author_permissions"] = $post[0]->user->permission_level;
 
         	$comments = [];
         	foreach ($post[0]->comments as $comment) {
 				$comments[] = [
 					"author_id" => $comment->author_id,
 					"author_name" => $comment->user->name,
+					"author_permissions" => $comment->user->permission_level,
 					"content" => $comment->content
 				];
 			}
@@ -95,6 +97,33 @@ class PostController extends Controller
 		$newComment->parent_post = $parentID;
 		$newComment->content = $content;
 		$newComment->save();
+
+		return response(array(
+			"err" => ""
+		), 200);
+	}
+
+	public function reportPost($postID, Request $request) {
+		$type = $request->type;
+
+		if(!in_array($type, array("report", "alert"))) {
+			return response(array(
+				"err" => "Invalid report type"
+			), 400);
+		}
+
+		if(!is_numeric($postID) || !Post::where('id', '=', $postID)->exists()) {
+			return response(array(
+				"err" => "Invalid post id!"
+			), 400);
+		}
+
+		$report = new \App\Reports();
+		$report->post_id = $postID;
+		$report->reporter = AuthTokens::getTokenData($request->token)[0]->user->id;
+		$report->type = $type;
+		$report->processed = false;
+		$report->save();
 
 		return response(array(
 			"err" => ""

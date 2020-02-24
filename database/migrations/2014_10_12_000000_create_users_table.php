@@ -19,7 +19,16 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('permissions')->default('USER');
+            $table->integer('permission_level')->default(1);
+            /*
+             * 0 = Banned
+             * 1 = User
+             * 2 = Vertrauter
+             * 3 = Schülermoderator
+             * 4 = Moderator
+             * 5 = Administrator
+             * 6 = Leitung
+             */
             $table->string("profile_picture_url")->default("");
             $table->string("blocked_users")->default("");
             $table->rememberToken();

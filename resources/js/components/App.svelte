@@ -17,8 +17,6 @@
 	function handlerBackNavigation(event) {
 		curRoute.set(event.state.path)
 	}
-
-
 </script>
 <style>
 	#pageContent {
@@ -31,6 +29,7 @@
 <svelte:window on:popstate={handlerBackNavigation} />
 
 <Navbar />
+
 <br />
 <div id="pageContent">
 	<svelte:component this={router[$curRoute]} />

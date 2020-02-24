@@ -63,20 +63,19 @@
 			}).then((res) => {
 				return res.json();
 			})
-					.then((data) => {
-						if(data.err !== "") {
-							Swal.fire(
-									'',
-									data.err,
-									'error'
-							);
-							return;
-						}
-
-						const newCommentEvent = new CustomEvent('newComment', { "parentID": parentID });
-						window.dispatchEvent(newCommentEvent);
-						postContent = "";
-					});
+				.then((data) => {
+					if(data.err !== "") {
+						Swal.fire(
+								'',
+								data.err,
+								'error'
+						);
+						return;
+					}
+					const newCommentEvent = new CustomEvent('newComment', { "parentID": parentID });
+					window.dispatchEvent(newCommentEvent);
+					postContent = placeholder;
+				});
 		});
 	}
 
