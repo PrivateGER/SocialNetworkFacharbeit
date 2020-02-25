@@ -6,10 +6,11 @@
     export let postCount = 50;
 
     let postsToDisplay = [];
+    let page = 1;
 
     function displayFeed() {
         return new Promise((resolve, reject) => {
-            fetch("/api/post/feed?limit=" + postCount + "&token=" + localStorage.getItem("token"))
+            fetch("/api/post/feed?limit=" + postCount + "&page=" + page + "&token=" + localStorage.getItem("token"))
                     .then((data) => {
                         return data.json();
                     })
@@ -19,6 +20,7 @@
 						});
 
 						postsToDisplay = removeDuplicatesAndSort(postsToDisplay).reverse();
+                        page++;
                         resolve("");
                     })
         });
@@ -56,5 +58,7 @@
 	<Post postID={ post.id } />
 	<br />
 { /each }
+
+<button class="btn btn-primary" on:click={displayFeed}>Mehr laden</button>
 
 <svelte:window on:newPost={displayFeed} />
