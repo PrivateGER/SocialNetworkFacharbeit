@@ -30,16 +30,29 @@
 			return res.json()
 		})
 		.then((res) => {
+			if(res.banned === true) {
+				bannedUser();
+				return;
+			}
             if (res === undefined || res.token === undefined) {
                 return;
             }
             console.log("Got new auth token: " + res.token);
 
+			localStorage.setItem("admin", res.permission_level > 2);
+			localStorage.setItem("userid", res.user_id);
             localStorage.setItem("token", res.token);
             window.location.href = "/home";
         }).catch((err) => {
 			console.log(err);
 			Swal.fire("Fehler", "Fehler bei der Kommunikation mit dem Server.", "error");
+		});
+	}
+
+	function bannedUser() {
+		Swal.fire({
+			html: "<i class=\"fas fa-gavel\" style='font-size: 300%; background: #ff0000; padding: 30px; border-radius: 50%; color: white'></i><br /><br />Sie wurden von einem Administrator aufgrund eines Regelbruchs von SchulNet verwiesen.<br />Ihre Inhalte sind für alle anderen Nutzer nun unsichtbar.",
+			footer: "Sollten weitere Fragen bestehen, senden Sie bitte eine E-Mail an support@schulnet.de."
 		});
 	}
 

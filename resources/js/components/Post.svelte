@@ -89,6 +89,14 @@
 		Swal.fire("Kopiert!", "Der Link zu diesem Post wurde in die Zwischenablage gelegt!", "success");
 	}
 
+	function openModeratorMenu() {
+
+	}
+
+	function deletePost() {
+		fetch()
+	}
+
 </script>
 <style>
 	.hiddenCommentSection {
@@ -110,6 +118,13 @@
                	<h6 class="card-subtitle mb-2 text-muted">{ post.created_at }</h6>
                 <p class="card-text">{ post.content }</p>
 
+				{ #if post.author_id == localStorage.getItem("userid") }
+					<button class="float-right bg-transparent border-0" on:click={deletePost}><i class="fas fa-trash-alt"></i></button>
+				{ /if }
+
+				{ #if localStorage.getItem("admin") === "true" }
+					<button class="float-right bg-transparent border-0" on:click={openModeratorMenu}><i class="fas fa-user-cog"></i></button>
+				{ /if }
 
 				<button class="card-link btn btn-primary" on:click={toggleComments}>
 

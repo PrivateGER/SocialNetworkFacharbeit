@@ -36,6 +36,15 @@ function checkAuth() {
 			if(data.status === 401 && !window.location.href.includes("login")) {
 				window.location.href = "/login";
 			}
+			return data;
+		})
+		.then((data) => { return data.json() })
+		.then((data) => {
+			if(data.data.permission_level === 0) {
+				window.location.href = "/login";
+			}
+			localStorage.setItem("admin", data.data.permission_level > 2);
+			localStorage.setItem("userid", data.data.userid);
 		});
 }
 
@@ -56,7 +65,28 @@ window.permissionLevelToRole = (id) => {
 		case 6:
 			return "Leitung";
 		default:
-			return "Unbekannt";
+			return "???";
+	}
+};
+
+window.permissionToColor = (id) => {
+	switch (id) {
+		case 0:
+			return "#ff0000";
+		case 1:
+			return "#6c757d";
+		case 2:
+			return "#6c757d";
+		case 3:
+			return "#007bff";
+		case 4:
+			return "#ffc107";
+		case 5:
+			return "#dc3545";
+		case 6:
+			return "#28a745";
+		default:
+			return "#000000";
 	}
 };
 

@@ -14,8 +14,10 @@ class PostController extends Controller
 
         if(count($post) === 1) {
 			$postToSend = $post->toArray()[0];
-			$postToSend["author_name"] = $post[0]->user->name;
-			$postToSend["author_permissions"] = $post[0]->user->permission_level;
+
+			$user = $post[0]->user;
+			$postToSend["author_name"] = $user->name;
+			$postToSend["author_permissions"] = $user->permission_level;
 
         	$comments = [];
         	foreach ($post[0]->comments as $comment) {
@@ -120,7 +122,7 @@ class PostController extends Controller
 
 		$report = new \App\Reports();
 		$report->target_id = $postID;
-    $report->type = "Post";
+    	$report->type = "Post";
 		$report->reporter = AuthTokens::getTokenData($request->token)[0]->user->id;
 		$report->report_type = $type;
 		$report->processed = false;
@@ -130,4 +132,27 @@ class PostController extends Controller
 			"err" => ""
 		), 200);
 	}
+
+	public function deletePost($id, Request $request) {
+    	$user_id = AuthTokens::getTokenData($request->token)[0]->user->id;
+    	$post = Post::where("id", $id)->get();
+
+    	if($post->count() === 0) {
+    		return response(array(
+    			"err" => "Post not found."
+			), 400);
+		}
+
+    	if($user_id !== $post[0]->author_id) {
+    		return response(array(
+    			"err" => "You did not make this post"
+			), 403);
+		}
+
+    	Post::where("id", $id)->delete();
+
+    	return response(array(
+    		"err" => ""
+		), 200);
+    }
 }

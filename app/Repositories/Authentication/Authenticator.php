@@ -64,6 +64,12 @@ class TokenManager {
 
         $valid_tokens = AuthTokens::getTokenData($token);
 
+        if($valid_tokens[0]->count() > 0) {
+        	if($valid_tokens[0]->user->permission_level === 0) {
+        		return false;
+			}
+		}
+
         return count($valid_tokens) > 0;
     }
 
@@ -79,9 +85,16 @@ class TokenManager {
 
         if($parent_user === null) {
             return array(
-                "err" => true
+                "err" => false,
             );
         }
+
+        if($parent_user->permission_level === 0) {
+        	return array(
+        		"err" => "",
+				"banned" => true
+			);
+		}
 
         if(Auth::attempt(array( "email" => $email, "password" => $password ))) {
             $newToken = hash("sha512", random_bytes(36));
@@ -93,7 +106,9 @@ class TokenManager {
 
             return [
                 "err" => false,
-                "token" => $newToken
+                "token" => $newToken,
+				"permission_level" => $parent_user->permission_level,
+				"user_id" => $parent_user->id,
             ];
         } else {
             return array(

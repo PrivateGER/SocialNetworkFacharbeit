@@ -43,6 +43,7 @@
 			{ #if data.data.permission_level > 2}
 				<h5>Sie haben administrativen Zugang! <RouterLink page={{path: '/admin', name: 'Admin', placeholder: "Klicken sie hier, um zum Dashboard zu gelangen!", "class": ""}} /></h5>
 			{/if}
+			<RouterLink page={{path: '/settings', name: 'Settings', placeholder: "Einstellungen", "class": ""}} />
 		{:catch error}
 			<h1 class="alert-danger">{ error }</h1>
 		{ /await }

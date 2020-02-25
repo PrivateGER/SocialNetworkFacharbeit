@@ -27,7 +27,10 @@ class AuthController extends Controller
 
         if($newToken["err"]) {
             usleep(random_int(200, 1000) * 1000);
-           return response($newToken, 401);
+            if(isset($newToken["banned"])) {
+				return response($newToken, 403);
+			}
+           	return response($newToken, 401);
         } else {
             return response($newToken, 200);
         }

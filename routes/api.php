@@ -30,6 +30,7 @@ Route::middleware(["valid_token"])->group(function() {
         Route::post("create", "PostController@createPost");
         Route::post("create_comment", "PostController@createComment");
         Route::post("report/{id}", "PostController@reportPost");
+		Route::post("delete/{id}", "PostController@deletePost");
 
     });
 
