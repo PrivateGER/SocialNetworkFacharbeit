@@ -119,9 +119,10 @@ class PostController extends Controller
 		}
 
 		$report = new \App\Reports();
-		$report->post_id = $postID;
+		$report->target_id = $postID;
+    $report->type = "Post";
 		$report->reporter = AuthTokens::getTokenData($request->token)[0]->user->id;
-		$report->type = $type;
+		$report->report_type = $type;
 		$report->processed = false;
 		$report->save();
 
