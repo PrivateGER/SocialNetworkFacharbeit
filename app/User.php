@@ -55,7 +55,8 @@ class User extends Authenticatable
     	return $this->hasMany(Comment::class, "id", "author_id");
 	}
 
-    public static function emailToUser($email) : User {
+    public static function emailToUser($email) : ?User
+	{
         $results = User::where("email", $email)->take(1)->get();
         if(count($results) === 1) {
             return $results[0];

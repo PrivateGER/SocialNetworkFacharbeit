@@ -4,9 +4,11 @@
 	import NewPost from "./NewPost.svelte";
 	import Swal from "sweetalert2";
 	import { copyTextToClipboard } from "../app";
+	import { redirectToPath } from "./RouterLink.svelte"
 
 	export let postID = 1;
 	export let collapsedComments = true;
+	export let hidePost = false;
 
 	let comments = [];
 
@@ -90,11 +92,37 @@
 	}
 
 	function openModeratorMenu() {
-
+		redirectToPath("/admin/modmenu?id=" + postID);
 	}
 
-	function deletePost() {
-		fetch()
+	async function deletePost() {
+		let response = await Swal.fire({
+			title: "Löschen",
+			text: "Bist du sicher, dass du diesen Post löschen möchtest?",
+			icon: "warning",
+			showCancelButton: true,
+			confirmButtonText: "Ja",
+			cancelButtonText: "Abbrechen",
+			cancelButtonColor: "#dc3545"})
+				.then((response) => {
+					if (response.value === true) {
+						let formData = new FormData();
+						formData.append("token", localStorage.getItem("token"));
+						fetch("/api/post/delete/" + postID, {
+							method: 'POST',
+							body: formData
+						}).then(() => {
+							Swal.fire({
+								html: "<i class=\"fas fa-trash-alt\" style='font-size: 300%; background: #6c757d; padding: 30px; border-radius: 50%; color: white'></i><br /><br />" +
+										"Post gelöscht!",
+							});
+							hidePost = true;
+						})
+					}
+		});
+
+
+
 	}
 
 </script>
@@ -107,6 +135,7 @@
 {#await getPostDetails() }
     <SpinningLoader />
 {:then post}
+<div style={ hidePost ? "display: none" : "" }>
     { #if post.type === "text" }
         <div class="card">
             <div class="card-body">
@@ -123,7 +152,7 @@
 				{ /if }
 
 				{ #if localStorage.getItem("admin") === "true" }
-					<button class="float-right bg-transparent border-0" on:click={openModeratorMenu}><i class="fas fa-user-cog"></i></button>
+					<a href={"/modmenu?id=" + postID } target="_blank"><button class="float-right bg-transparent border-0" on:click={openModeratorMenu}><i class="fas fa-user-cog"></i></button></a>
 				{ /if }
 
 				<button class="card-link btn btn-primary" on:click={toggleComments}>
@@ -149,6 +178,7 @@
             </div>
         </div>
     { /if }
+</div>
 {/await}
 
 <svelte:window on:newComment={updateComments} />

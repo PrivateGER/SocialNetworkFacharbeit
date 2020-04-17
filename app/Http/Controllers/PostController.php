@@ -134,7 +134,9 @@ class PostController extends Controller
 	}
 
 	public function deletePost($id, Request $request) {
-    	$user_id = AuthTokens::getTokenData($request->token)[0]->user->id;
+    	$user = AuthTokens::getTokenData($request->token)[0]->user->id;
+    	$user_id = $user->id;
+    	$user_perms = $user->permission->level;
     	$post = Post::where("id", $id)->get();
 
     	if($post->count() === 0) {
@@ -143,9 +145,9 @@ class PostController extends Controller
 			), 400);
 		}
 
-    	if($user_id !== $post[0]->author_id) {
+    	if($user_id !== $post[0]->author_id && $user_perms < 3) {
     		return response(array(
-    			"err" => "You did not make this post"
+    			"err" => "You do not own this post or do not have moderation privileges."
 			), 403);
 		}
 

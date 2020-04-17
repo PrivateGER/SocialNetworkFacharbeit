@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\AuthTokens;
 use App\ModerationLog;
+use App\Post;
 use App\Reports;
+use App\User;
 use Illuminate\Http\Request;
 
 class AdministrationController extends Controller
@@ -28,5 +30,25 @@ class AdministrationController extends Controller
 		} else {
 			return Reports::orderBy("created_at", "DESC")->get();
 		}
+	}
+
+	public function deletePost(Request $request) {
+		$id = $request->id;
+		$ban_user = filter_var($request->banUser, FILTER_VALIDATE_BOOLEAN);
+		$post = Post::find($id);
+
+		if($ban_user) {
+			$userID = $post->user->id;
+			$user = User::find($userID);
+			$user->permission_level = 0;
+			$user->save();
+		}
+
+
+		Post::where("id", $id)->delete();
+
+		return response(array(
+			"err" => ""
+		), 200);
 	}
 }

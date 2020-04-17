@@ -47,6 +47,10 @@ Route::middleware(["valid_moderation_token"])->group(function () {
 			Route::post("process_report", "AdministrationController@process_report");
 		});
 
+		Route::prefix("post")->group(function () {
+			Route::post("delete", "AdministrationController@deletePost");
+		});
+
 		Route::get("modlog", "AdministrationController@showModlog");
 	});
 });
